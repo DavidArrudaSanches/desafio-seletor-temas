@@ -1,0 +1,65 @@
+/* Variáveis para o tema padrão (Claro) */
+:root {
+    --bg-color: #ffffff;
+    --text-color: #222222;
+    --header-bg: #f1f1f1;
+    --link-color: #007bff;
+    --border-color: #dddddd;
+    --transition-speed: 0.3s;
+  }
+  
+  /* Variáveis para o tema Escuro */
+  .dark-theme {
+    --bg-color: #222222;
+    --text-color: #f1f1f1;
+    --header-bg: #333333;
+    --link-color: #64b5f6;
+    --border-color: #444444;
+  }
+  
+  /* Variáveis para o tema Sépia */
+  .sepia-theme {
+    --bg-color: #f4e8d5;
+    --text-color: #5b4636;
+    --header-bg: #e4d8c5;
+    --link-color: #8d6e63;
+    --border-color: #d3c5b5;
+  }
+  
+  /* Estilos Gerais que usam as variáveis */
+  body {
+    background-color: var(--bg-color);
+    color: var(--text-color);
+    font-family: sans-serif;
+    transition: background-color var(--transition-speed), color var(--transition-speed);
+    margin: 0;
+  }
+  
+  header {
+    background-color: var(--header-bg);
+    padding: 1rem;
+    border-bottom: 2px solid var(--border-color);
+    text-align: center;
+    transition: background-color var(--transition-speed), border-color var(--transition-speed);
+  }
+  
+  .theme-switcher button {
+    margin: 0 0.5rem;
+    padding: 0.5rem 1rem;
+    border: 2px solid var(--border-color);
+    background-color: var(--bg-color);
+    color: var(--text-color);
+    cursor: pointer;
+    border-radius: 5px;
+    font-size: 1rem;
+    transition: background-color var(--transition-speed), color var(--transition-speed);
+  }
+  
+  .content {
+    padding: 2rem;
+  }
+  
+  a {
+    color: var(--link-color);
+    transition: color var(--transition-speed);
+  }
